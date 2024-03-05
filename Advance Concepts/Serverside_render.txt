@@ -1,0 +1,21 @@
+You are not sending the chunks
+In which you send the whole cooked part to client which is HTML so it takes less time to load.
+
+
+Rendering on server rather then browser, this improve the performance and availablity
+
+Perciously -> website only have html some css and js and no worries, hosted on serverna dn client fetch it
+
+It involve render the componet on the server and then sending that HTML t client, client will use this HTML to make initial state of app and using framework like Next js we can show it to user
+
+This is when we want website to build something we want to show on server not in client and then send it to our client in chuks so it will perform good in less connectio place or device
+
+
+Now lot of complexity in website
+
+Working : 
+1. Req to server
+2. Server render HTML and pre populate it with data
+
+3. Server send HTML to client
+4. Client make req to server for more data

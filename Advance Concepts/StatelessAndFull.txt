@@ -1,0 +1,25 @@
+When behaviour of your component depend on state then it is statefull(class) else stateless and function
+
+Statefull -> class in which state initlize inside the constructor
+
+react 15 -> react stack - have its own initial state and it use it to store data and render component
+That's why it focus on state and login
+class App extends Component {
+constructor(props) {
+super(props)
+this.state = { count: 0 }
+}
+render() {
+
+}
+}
+
+React Fiber -> react 16.8 and above - Dont have initial state means it will recive all the data througn props and not haveinitial object of data
+Thats why its focus on UI
+import React, {useState} from 'react';
+const App = (props) => {
+const [count, setCount] = useState(0);
+return (
+// JSX
+)
+}
